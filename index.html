@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Mis XV Años | Joselin Paola</title>
+    <meta name="description" content="Acompáñame a celebrar mis XV Años este 13 de Junio de 2026.">
+    <meta name="theme-color" content="#FFF0F5"> 
+
+    <meta property="og:title" content="Mis XV Años | Joselin Paola">
+    <meta property="og:description" content="Estás invitado a celebrar este gran día conmigo.">
+    <meta property="og:image" content="https://tu-dominio.com/preview.jpg"> 
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="bg-music" loop preload="auto">
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="music-control-container">
+        <button class="music-control" onclick="toggleMusic()" aria-label="Controlar música">
+            <i id="music-icon" class="fa-solid fa-music"></i>
+        </button>
+    </div>
+
+    <div id="envelope-screen" class="envelope-screen">
+        <div class="envelope-wrapper" id="envelope-wrapper" role="button" tabindex="0" aria-label="Abrir invitación">
+            <div class="envelope">
+                <div class="flap top-flap"></div>
+                <div class="pocket"></div>
+                
+                <div class="letter-preview">
+                    <p class="invite-header">Estás invitado</p>
+                    <h1 class="letter-title">Mis XV<br>Años</h1>
+                    <div class="mini-divider"></div>
+                    <p class="invite-sub">Joselin</p>
+                </div>
+                
+                <div class="wax-seal">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffd700/crown.png" alt="Corona" class="seal-icon">
+                </div>
+            </div>
+            <div class="click-hint">
+                <i class="fa-solid fa-hand-pointer"></i> Toca para abrir
+            </div>
+        </div>
+    </div>
+
+    <div id="fireworks-container"></div>
+    <div class="bg-overlay"></div>
+
+    <main class="main-container hidden-content" id="main-content">
+        <div class="glass-card">
+
+            <section class="card-section intro" data-aos="fade-up" data-aos-duration="1500">
+                <p class="small-tag">La familia Perez Castillo te invita a los XV años de</p>
+                <h1 class="golden-text">Joselin<br>Paola</h1>
+
+                <div class="quote-container">
+                    <p class="quote">
+                        “Hoy doy gracias a Dios por permitirme llegar a este momento tan especial. Con alegría en mi corazón y con la bendición de mi familia, quiero compartir contigo la celebración de mis XV años, un día lleno de amor, fe y nuevos sueños. Tu presencia será parte importante de este recuerdo que guardaré para siempre.”
+                    </p>
+                </div>
+
+                <div class="countdown-wrapper" data-aos="zoom-in" data-aos-delay="300">
+                    <p class="save-date">13 de Junio, 2026</p>
+
+                    <div id="countdown" class="countdown-grid" aria-label="Cuenta regresiva">
+                        <div class="timer-box"><span id="days">00</span><small>Días</small></div>
+                        <div class="timer-box"><span id="hours">00</span><small>Hrs</small></div>
+                        <div class="timer-box"><span id="minutes">00</span><small>Min</small></div>
+                        <div class="timer-box"><span id="seconds">00</span><small>Seg</small></div>
+                    </div>
+
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+Años+Joselin+Paola&dates=20260613T160000/20260614T020000"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-gold-outline">
+                        <i class="fa-regular fa-calendar-plus"></i> Agendar evento
+                    </a>
+                </div>
+            </section>
+
+            <div class="divider-icon"><i class="fa-solid fa-heart"></i></div>
+
+            <section class="card-section gallery" data-aos="fade-up">
+                <h2 class="section-title">Mis Fotos</h2>
+                
+                <div class="photo-grid">
+                    <div class="photo-item photo-large" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="photo-frame">
+                            <img src="foto3.jpeg" alt="Joselin Foto 1" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="photo-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="photo-frame">
+                            <img src="foto2.jpeg" alt="Joselin Foto 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="photo-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="photo-frame">
+                            <img src="foto1.jpeg" alt="Joselin Foto 3" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="photo-item photo-wide" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="photo-frame">
+                            <img src="foto4.jpeg" alt="Joselin Foto 4" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider-icon"><i class="fa-solid fa-star"></i></div>
+
+            <section class="card-section hosts" data-aos="fade-up">
+                <div class="hosts-grid">
+                    <div class="host-col">
+                        <h3><i class="fa-solid fa-hands-praying icon-gold"></i> Con la bendición de mis padres</h3>
+                        <p class="host-names">Eduardo Pérez Hernández</p>
+                        <p class="host-names">Martha Castillo Francisco</p>
+                    </div>
+                    <div class="host-col">
+                        <h3><i class="fa-solid fa-crown icon-gold"></i> Mis Padrinos de Honor</h3>
+                        <p class="host-names">Ernesto Diego Reséndiz</p>
+                        <p class="host-names">Ana Castillo Francisco</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-section timeline" data-aos="fade-up">
+                <h2 class="section-title">Lugares de evento</h2>
+                <div class="timeline-container">
+                    <div class="timeline-row">
+                        <div class="timeline-time">16:00 hrs</div>
+                        <div class="timeline-dot"><i class="fa-solid fa-church"></i></div>
+                        <div class="timeline-content">
+                            <h3>Ceremonia Religiosa</h3>
+                            <p class="place">Parroquita de San Mateo Apostol</p>
+                            <p class="address">Avenida De La Cruz, Cam. a la Purísima 8, San Mateo Cuautepec, 54948 Méx.</p>
+                            <a href="https://maps.app.goo.gl/dFyREwyBr94DgJSy8?g_st=iw" target="_blank" rel="noopener noreferrer" class="map-btn">
+                                <i class="fa-solid fa-location-dot"></i> Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">17:30 hrs</div>
+                        <div class="timeline-dot"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div class="timeline-content">
+                            <h3>Recepción de Salón</h3>
+                            <p class="place">Salon CRONIA</p>
+                            <p class="address">Av. José López Portillo 206, Sta Maria Cuautepec, 54949 Fuentes del Valle, Méx.</p>
+                            <a href="https://maps.app.goo.gl/wLrmnHPryymd7TLp9" target="_blank" rel="noopener noreferrer" class="map-btn">
+                                <i class="fa-solid fa-location-dot"></i> Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-section footer-info" data-aos="zoom-in-up">
+                <div class="info-badges">
+                    <div class="badge-item">
+                        <div class="badge-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h4>Código de Vestimenta</h4>
+                        <p>Formal / Etiqueta</p>
+                        <small>De preferencia no color rosa</small>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon"><i class="fa-solid fa-gift"></i></div>
+                        <h4>Obsequios</h4>
+                        <p>Lo que nazca del corazón</p>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon"><i class="fa-solid fa-children"></i></div>
+                        <h4>Acceso</h4>
+                        <p>Para todos</p>
+                        <small>Solo con invitación</small>
+                    </div>
+                </div>
+
+                <div class="rsvp-area">
+                    <p class="rsvp-text">Esperamos contar con tu presencia. Por favor confirma antes del 1 de Junio.</p>
+                    <button class="btn btn-gold-solid rsvp-btn" onclick="confirmWhatsApp()">
+                        <i class="fa-brands fa-whatsapp"></i> Confirmar Asistencia
+                    </button>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="final-footer">
+            <p>Hecho con amor | Familia Perez Castillo</p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
