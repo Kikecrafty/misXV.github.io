@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================================= */
     const CONFIG = {
         eventDate: "2026-06-13T16:00:00", 
-        whatsappPhone: "525543622188",    
+        whatsappPhone: "525514378698",    
         whatsappMessage: "¡Hola! Confirmo mi asistencia a los XV de Joselin Paola. Muchas gracias.",
         audioVolume: 0.4
     };
